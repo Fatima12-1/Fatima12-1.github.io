@@ -1,154 +1,298 @@
+
 <html>
+
 <head>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="https://use.fontawesome.com/1bcbbfbece.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style type="text/css">
-body{
-background-size:1400px 700px;
-background-repeat:no-repeat;
-background-color:#F1F1F1;
-position:absolute;
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-}
- 
-.se1 img{
-margin-left:130px;margin-top:80px;
-width:1090px;height:570px; 
-box-shadow:0px 1px 15px 2px black;
-position:absolute;
-}
- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+	*{
+	
+	}
+header{
+  background:url(guitar1.png);
+  background-size:cover;
+  position:center;
+  min-height:1300px;
+  position:static;
   
-.se2 img{
-margin-left:0px;margin-top:0px;
-width:1400px;height:700px;
-position:absolute;
 }
- 
-a{
-font-size:25;
-color:black;
-text-decoration:none;
-position:fixed;
+@media screen and (max-width:600px){
+header{
+  height:500px;
 }
- 
-.active{
-margin-left:0px;margin-top:30px;
-font-size:15;position:absolute;color:coral;
 }
-.ss{
-margin-left:190px;margin-top:150px;
-;width:200px;height:100px;
-color:white;
-position:absolute;
-}.info{
-margin-left:190px;margin-top:250px;
-;width:200px;height:100px;
-color:white;
-position:absolute;
-}
-.info1{
-margin-left:190px;margin-top:290px;
-;width:200px;height:100px;
-color:white;
-position:absolute;
-}
- 
-.e1{
-margin-left:27px;margin-top:560px;
-position:absolute;font-size:11px;
+h3{
+	font-family:sacramento;
+
+	}
+
+.card {
+  transition: 0.5s;
+  padding:10px 10px 10px 10px 10px;
+   
 }
 
-a:hover{
-color:aqua;
-position:absolute;
-transition:0.2s;
+.card:hover {
+  transform: scale(1.05);
+   
+  opacity:0.7;
 }
-a.active{
-color:midnightblue;
-position:absolute;
- 
+.card:hover a{
+  transform: scale(1.05);
+  background:black;
+  
 }
-.button1{
-color:white;
-margin-left:190px;margin-top:550px;
-font-size:15;
-text-align:center;
-background:turquoise;
-border:0.5px;width:90px;
-border-radius:2px;
-height:27px;
-position:absolute;
+.row .col{
+	padding:20px;
+	width:100%;
+	 
 }
+#music{
+	width:79%;
+}
+#x1 {
+	
+	background:black;
+	text-align:center;
+
+
+}
+input,select,textarea{
+	color:white;
+	
+}
+
+#mobile-nav {
   
  
-.zz{
-color:turquoise;
-margin-left:160px;margin-top:60px;
-font-size:15;position:absolute;
+ padding:50px 50px 50px 50px;
+ text-align:center;
+
+}
+#mobile-nav li{
+ text-align:center;
+ font-size:30px; 
+  
+
+}
+#mobile-nav ul p{
+ text-align:center;
  
+  
 }
-.za{
-color:turquoise;
-margin-left:270px;margin-top:90px;     
-font-size:15;position:absolute;
+#logo {
+  
+font-size:30px; 
+font-family:sacramento;
 }
-.e{
-color:turquoise;	
-margin-left:380px;margin-top:90px;
-font-size:15;position:absolute;
+#mobile-nav li a:hover{
+	opacity:0.9;
 }
-.e1{
-color:turquoise;	
-margin-left:490px;margin-top:90px;
-font-size:15;position:absolute;
-}
+
+#desk li a:hover
+ {
+  transition: 0.5s;
+
+  color:brown;
+
+ }
+ #x2{
+ 	text-decoration:none;
+ 	color:grey;
+ }
  
-.zs{
-color:black;
-margin-left:130px;margin-top:80px;
-opacity:0.2;
-border:0.5px solid white;width:1090px;
-box-shadow:0px 1px 15px 2px black;
-height:31px;
-position:absolute;
-}
- 
-</style>
+
+
+
+ </style>
+
+
+
 </head>
 <body>
 
+<header>
+	<nav class="nav-wrapper black ">
+		<div class="container">
+		<a href="#" class="brand-logo" id="logo">hub de música</a>
+
+		<a href="#" class="sidenav-trigger" data-target="mobile-nav">
+			<i class="material-icons">menu</i>
+		</a>
+
+		<ul class="right hide-on-med-and-down"  id="desk">
+
+			<li><a href="#">Home</a></li>
+			<li><a href="#x1">Contact</a></li>
+			<li><a href="#music">Music</a></li>
+			<li><a href="#about">About</a></li>
+
+			
+		</ul>
  
-<div class="se2"><img src="pf.jpg" alt="pf">
+
+
+<ul class="sidenav black" id="mobile-nav">
+
+		<center> <font color="white"><font face="sacramento"><font size="50"><p class="center-align">hub de música</p></font></font></font>
+			 
+
+	    <li><a href="#" class="btn teal darken-1 waves-effect waves-light">Home</a></li>
+	    <li><a href="#x1" class="btn teal darken-1 waves-effect waves-light">Contact</a></li>
+
+	    <li><a href="#music" class="btn teal darken-1 waves-effect waves-light">Music</a></li>
+	    <li><a href="#about" class="btn teal darken-1 waves-effect waves-light">About</a></li>
+	    <li><img src="imgx.png" style="width:30%; transform:rotate(20deg);"></li>
+
+	  
+
+			 
+</ul>
+	</div>
+</nav>
+</header>
+
+<div class="container service scrollspy" id="music">
+	<h4 class="teal-text text-darken-1 center-align">Music Feast</h4>
+		<p class="center-align">Find some awesome playlists over here.</p>
+	<div class="row">
+		<div class="col s12 md6 L4  center-align">
+			<div class="card">
+				<div class="card-image">
+					<img src="yy7.png" alt="">
+				</div>
+				<div class="card-content">
+					<span class="card-title">Guitar whales</span>
+					 
+					<p>Here you go!,A couple of aesthetic and soothing guitar tunes.</p>
+				</div>
+				<div class="card-action">
+					<a href=guitar.html class="btn waves-effect waves-light">
+						 View More 						 
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 md6 L4 center-align">
+			<div class="card">
+				<div class="card-image">
+					<img src="yy7.png" alt="">
+				</div>
+				<div class="card-content">
+					 <span class="card-title">Ukulele whales</span>
+					 
+					<p>Here you go!,A couple of aesthetic and soothing ukulele tunes.</p>
+				</div>
+				<div class="card-action">
+					<a href=ukulele.html class="btn waves-effect waves-light">
+						 View More 						 
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 md6 L4 center-align">
+			<div class="card">
+				<div class="card-image">
+					<img src="yy7.png" alt="">
+				</div>
+				<div class="card-content">
+					 <span class="card-title">Anonymous whales</span>
+					 
+					<p>Here you go!,A couple of spooky and anonymous tunes.</p>
+				</div>
+				<div class="card-action">
+					<a href=spooky.html class="btn waves-effect waves-light">
+						 View More 						 
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<div class="se1"><img src="pf1.jpg" alt="pf1">
- 
-<div class="zs"><p></p></div>
- 
- <font face="comic sans ms"> 
-<div class="zz"><a class="active" href="index.html">Home</a></div>
-<a class="za" href="About.html">About</a>
-<a class="e" href="skills.html"> Skills</a>
-<a class="e1" href="contact.html">Contact</a>
+	<div class="container scrollspy" id="x1">
 
-</div><div class="ss"><p><font size="7">HI!</div><div class="info"><font color="turquoise">I'm Fatima,</font><font color="white">a web developer</font></div></p></div>
+	<div class="row ">
+		<div class="col s12 md6 l5">
+			<h2 class="teal-text text-darken-1">Contact us</h2>
+			<p><font face="montserrat"><font color="white">Hey, there! Contact us via email, throw a message if required. Write your comments about our site. Cover up the input fields, enter your suggestions and submit them.</font></font></p>
+		</div>
+		<div class="col s12 md6 l5 offset-12">
+			<form action="">
+				<div class="input-field">
+					<i class="material-icons teal-text text-darken-1 prefix">email</i>
+					<input type="email" id="email">
+					<label for="email">Email</label>
+				</div>
+				<div class="input-field">
+					<i class="material-icons teal-text text-darken-1 prefix">message</i>
+
+					<textarea id="message" class="materialize-textarea"></textarea>
+					<label for="message">Write your message</label>
+				</div>
+				<div class="input-field">
+					 
+					<input type="text" id="date" class="datepicker">
+					<label for="date">Select a date:)</label>
+				</div>
+				<div class="input-field center">
+					 
+					<button class="btn waves-effect waves-light">submit</button>
+					 
+				</div>
 
 
+			</form>
+
+		</div>
+
+
+	</div>
 </div>
-<div class=button><a class="button1" href="contact.html">Contactme</a></div><div class="h1"><font color="black"><font size="4"> 
- 
-</div></a>
+<footer class= " page-footer grey darken-3">
+	<div class="container center-align scrollspy" id="about">
+
+	 
+<font color="grey">
+			<h3>About us</h3>
+			<p>We offer a couple of instrumental tunes including guitar and ukulele, Moreover find some dark tunes , too , on this site . You can either download or listen to these amazing tunes on our site. PS (this website would get innovated by time)</p>
+		 
+	
+		
+			
+	         
+		 
+	</div>
+	<div class="footer-copyright grey darken-4">
+	<div class="container center-align">&copy; 2021 hub de música</div>
+
+	</div>
+
+
+		</footer>
+
+
+
+<script>
+		$(document).ready(function(){
+ 		$('.sidenav').sidenav();
+ 		$('.datepicker').datepicker({
+ 			 
+ 		});
+ 		$('.scrollspy').scrollSpy();
+
+
+ 	});
+
+ </script>
 </body>
-</html>
- 
-
-
-
-
-
-
-
-
-
-
